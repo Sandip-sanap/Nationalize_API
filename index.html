@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            min-height: 50vh;
+            background-color:wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a,a:hover{
+            text-decoration: none;
+
+
+        }
+        .searchBox{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .searchText{
+            width: 10rem;
+            border-radius: 5rem;
+            border: none;
+            outline: none;
+            transition: all 0.2s linear;
+        }
+        .search-Text:focus{
+            outline: none;
+        }
+        .searchBtn{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 10rem;
+            background-color: #192a56;
+            color: white;
+            position: absolute;
+            display: grid;
+            right: 1rem; 
+            place-items: center;
+
+        }
+         .searchText{
+            width: 25rem;
+            padding: 2rem;
+            box-shadow: 0 2rem 2rem --1.5rem rgb(0, 0, 0.5);
+        }
+        .searchBtn{
+            background: #fff;
+            color: royalblue;
+        }
+        .user-list{
+            margin: 2rem;
+            padding: 2rem;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="searchBox">
+        <input type="text" id ="firstName"class="searchText"  placeholder="   Search for names..">
+        <a href="#" class="searchBtn" onclick="myFunction()">
+            <i class="fas fa-search fa-3x"></i>
+        </a>
+    </div>
+    <div class="user-list">
+    </div>
+
+</body>
+
+</html>
